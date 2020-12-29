@@ -1,75 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Bind domain name to github page</title>
-    <url>/2020/09/01/Bind-domain-name-to-github-page/</url>
-    <content><![CDATA[<h4 id="How-to-bind-domain-name-to-github-page"><a href="#How-to-bind-domain-name-to-github-page" class="headerlink" title="How to bind domain name to github page"></a>How to bind domain name to github page</h4><p>When using github and hexo to deploy our own blog, we may want to customize our domain instead of using “name.github.io”, We can bind a domain name to it.</p>
-<a id="more"></a>
-
-<h5 id="1-Domain-name"><a href="#1-Domain-name" class="headerlink" title="1. Domain name"></a>1. Domain name</h5><p>Get a domain name, and resolve it to your “name.github.io”.</p>
-<h5 id="2-Github"><a href="#2-Github" class="headerlink" title="2. Github"></a>2. Github</h5><p>Add a file named CNAME in blog_name/source/, then write your domain name into it(need not https or www).</p>
-]]></content>
-      <categories>
-        <category>tips</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo X Github</title>
-    <url>/2020/04/19/Hexo-X-Github/</url>
-    <content><![CDATA[<h3 id="Build-blog-with-Hexo-and-Github"><a href="#Build-blog-with-Hexo-and-Github" class="headerlink" title="Build blog with Hexo and Github"></a>Build blog with <a href="https://www.hexo.io" target="_blank" rel="noopener">Hexo</a> and <a href="https://www.github.com" target="_blank" rel="noopener">Github</a></h3><blockquote>
-<p><em>In this article, I’m going to talk about how to build your own Blog with hexo and github</em></p>
-</blockquote>
-<p><strong>Platform:</strong> Linux</p>
-<p><strong>What’s you need:</strong> </p>
-<blockquote>
-<ol>
-<li>A github account</li>
-<li>npm installed </li>
-<li>nodejs installed</li>
-<li>know about some git commands</li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h4 id="Step-one"><a href="#Step-one" class="headerlink" title="Step one"></a>Step one</h4><p>Build a repos on Github named by “username.github.io”</p>
-<h4 id="Step-two"><a href="#Step-two" class="headerlink" title="Step two"></a>Step two</h4><p>Install hexo on your local pc</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>Execute the following commands on your local pc</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init &lt;Fold_Name&gt;</span><br><span class="line">$ cd &lt;Fold_Name&gt;</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-three"><a href="#Step-three" class="headerlink" title="Step three"></a>Step three</h4><p>Then push the local repository to remote repository on Github with the commands </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin $repos_address</span><br><span class="line">git push --set-upstream origin master</span><br></pre></td></tr></table></figure>
-
-<h5 id="Some-hexo-commands"><a href="#Some-hexo-commands" class="headerlink" title="Some hexo commands"></a>Some hexo commands</h5><p><em>1. Generate static file</em></p>
-<blockquote>
-<p>hexo g(enerate)</p>
-</blockquote>
-<p><em>2. Start the local server</em> </p>
-<blockquote>
-<p>hexo s(erver)</p>
-</blockquote>
-<p><em>3. Deploy your website</em></p>
-<blockquote>
-<p>hexo d(eploy)</p>
-</blockquote>
-<p><em>4. Create a new post</em></p>
-<blockquote>
-<p>hexo new “Post_Name”</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git Commands</title>
     <url>/2020/04/28/Git-Commands/</url>
     <content><![CDATA[<h3 id="Some-Git-commands"><a href="#Some-Git-commands" class="headerlink" title="Some Git commands"></a>Some Git commands</h3><p><em>In this article I’m going to list some git commands that are frequently used</em></p>
@@ -166,6 +97,75 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo X Github</title>
+    <url>/2020/04/19/Hexo-X-Github/</url>
+    <content><![CDATA[<h3 id="Build-blog-with-Hexo-and-Github"><a href="#Build-blog-with-Hexo-and-Github" class="headerlink" title="Build blog with Hexo and Github"></a>Build blog with <a href="https://www.hexo.io" target="_blank" rel="noopener">Hexo</a> and <a href="https://www.github.com" target="_blank" rel="noopener">Github</a></h3><blockquote>
+<p><em>In this article, I’m going to talk about how to build your own Blog with hexo and github</em></p>
+</blockquote>
+<p><strong>Platform:</strong> Linux</p>
+<p><strong>What’s you need:</strong> </p>
+<blockquote>
+<ol>
+<li>A github account</li>
+<li>npm installed </li>
+<li>nodejs installed</li>
+<li>know about some git commands</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h4 id="Step-one"><a href="#Step-one" class="headerlink" title="Step one"></a>Step one</h4><p>Build a repos on Github named by “username.github.io”</p>
+<h4 id="Step-two"><a href="#Step-two" class="headerlink" title="Step two"></a>Step two</h4><p>Install hexo on your local pc</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>Execute the following commands on your local pc</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init &lt;Fold_Name&gt;</span><br><span class="line">$ cd &lt;Fold_Name&gt;</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<h4 id="Step-three"><a href="#Step-three" class="headerlink" title="Step three"></a>Step three</h4><p>Then push the local repository to remote repository on Github with the commands </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin $repos_address</span><br><span class="line">git push --set-upstream origin master</span><br></pre></td></tr></table></figure>
+
+<h5 id="Some-hexo-commands"><a href="#Some-hexo-commands" class="headerlink" title="Some hexo commands"></a>Some hexo commands</h5><p><em>1. Generate static file</em></p>
+<blockquote>
+<p>hexo g(enerate)</p>
+</blockquote>
+<p><em>2. Start the local server</em> </p>
+<blockquote>
+<p>hexo s(erver)</p>
+</blockquote>
+<p><em>3. Deploy your website</em></p>
+<blockquote>
+<p>hexo d(eploy)</p>
+</blockquote>
+<p><em>4. Create a new post</em></p>
+<blockquote>
+<p>hexo new “Post_Name”</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Bind domain name to github page</title>
+    <url>/2020/09/01/Bind-domain-name-to-github-page/</url>
+    <content><![CDATA[<h4 id="How-to-bind-domain-name-to-github-page"><a href="#How-to-bind-domain-name-to-github-page" class="headerlink" title="How to bind domain name to github page"></a>How to bind domain name to github page</h4><p>When using github and hexo to deploy our own blog, we may want to customize our domain instead of using “name.github.io”, We can bind a domain name to it.</p>
+<a id="more"></a>
+
+<h5 id="1-Domain-name"><a href="#1-Domain-name" class="headerlink" title="1. Domain name"></a>1. Domain name</h5><p>Get a domain name, and resolve it to your “name.github.io”.</p>
+<h5 id="2-Github"><a href="#2-Github" class="headerlink" title="2. Github"></a>2. Github</h5><p>Add a file named CNAME in blog_name/source/, then write your domain name into it(need not https or www).</p>
+]]></content>
+      <categories>
+        <category>tips</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>How to write Shell script</title>
     <url>/2020/07/17/How-to-write-Shell-script/</url>
     <content><![CDATA[<h3 id="How-to-write-Shell-script"><a href="#How-to-write-Shell-script" class="headerlink" title="How to write Shell script"></a>How to write Shell script</h3><p><em>Here you can get to know the basic grammar of shell quickly</em></p>
@@ -208,11 +208,24 @@
 <a id="more"></a>
 ]]></content>
       <categories>
-        <category>tips</category>
         <category>tutorial</category>
+        <category>tips</category>
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java Spring</title>
+    <url>/2020/09/04/Java-Spring/</url>
+    <content><![CDATA[<p><strong>IOC:</strong> Inverse of Control 控制反转</p>
+]]></content>
+      <categories>
+        <category>Conception</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
@@ -283,53 +296,6 @@
       <tags>
         <tag>linux</tag>
         <tag>MariaDB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Yum Commands</title>
-    <url>/2020/04/28/Yum-Commands/</url>
-    <content><![CDATA[<h3 id="Yum-Commands"><a href="#Yum-Commands" class="headerlink" title="Yum Commands"></a>Yum Commands</h3><p><em>This file records some useful yum commands</em></p>
-<p><strong>1. List all the package that can update:</strong>  </p>
-<blockquote>
-<p>yum check-update</p>
-</blockquote>
-<p><strong>2. Update all the software:</strong></p>
-<blockquote>
-<p>yum update</p>
-</blockquote>
-<a id="more"></a>
-
-<p><strong>3. Install the package:</strong></p>
-<blockquote>
-<p>yum install <package_name></p>
-</blockquote>
-<p><strong>4. Update the software:</strong></p>
-<blockquote>
-<p>yum update <package_name></p>
-</blockquote>
-<p><strong>5. List all the package that can be installed:</strong></p>
-<blockquote>
-<p>yum list</p>
-</blockquote>
-<p><strong>6. Delete the package:</strong></p>
-<blockquote>
-<p>yum remove <package_name></p>
-</blockquote>
-<p><strong>7. Find the package:</strong></p>
-<blockquote>
-<p>yum search <keyword></p>
-</blockquote>
-<p><strong>8. Clear storage:</strong></p>
-<blockquote>
-<p>yum clean packages<br>yum clean headers<br>yum clean oldheaders<br>yum clean yum clean all</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Commands</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>yum</tag>
       </tags>
   </entry>
   <entry>
@@ -422,6 +388,67 @@
       <tags>
         <tag>linux</tag>
         <tag>pacman</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL BASICS</title>
+    <url>/2020/09/22/SQL-BASICS/</url>
+    <content><![CDATA[<h3 id="Some-sql-statements"><a href="#Some-sql-statements" class="headerlink" title="Some sql statements"></a>Some sql statements</h3><ol>
+<li><strong>Add</strong> </li>
+</ol>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Yum Commands</title>
+    <url>/2020/04/28/Yum-Commands/</url>
+    <content><![CDATA[<h3 id="Yum-Commands"><a href="#Yum-Commands" class="headerlink" title="Yum Commands"></a>Yum Commands</h3><p><em>This file records some useful yum commands</em></p>
+<p><strong>1. List all the package that can update:</strong>  </p>
+<blockquote>
+<p>yum check-update</p>
+</blockquote>
+<p><strong>2. Update all the software:</strong></p>
+<blockquote>
+<p>yum update</p>
+</blockquote>
+<a id="more"></a>
+
+<p><strong>3. Install the package:</strong></p>
+<blockquote>
+<p>yum install <package_name></p>
+</blockquote>
+<p><strong>4. Update the software:</strong></p>
+<blockquote>
+<p>yum update <package_name></p>
+</blockquote>
+<p><strong>5. List all the package that can be installed:</strong></p>
+<blockquote>
+<p>yum list</p>
+</blockquote>
+<p><strong>6. Delete the package:</strong></p>
+<blockquote>
+<p>yum remove <package_name></p>
+</blockquote>
+<p><strong>7. Find the package:</strong></p>
+<blockquote>
+<p>yum search <keyword></p>
+</blockquote>
+<p><strong>8. Clear storage:</strong></p>
+<blockquote>
+<p>yum clean packages<br>yum clean headers<br>yum clean oldheaders<br>yum clean yum clean all</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Commands</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>yum</tag>
       </tags>
   </entry>
   <entry>
