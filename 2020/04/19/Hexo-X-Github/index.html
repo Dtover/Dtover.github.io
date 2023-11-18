@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Hexo X Github · Hexo</title><meta name="description" content="Hexo X Github - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="https://dtover.github.io/atom.xml" title="Hexo"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">Hexo</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>INDEX</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>ARCHIVES</p></a><ul class="shortcut-icons"><a href="https://github.com/dtover" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">Hexo X Github</h1><div class="post-info">Apr 19, 2020</div><div class="post-content"><h3 id="Build-blog-with-Hexo-and-Github"><a href="#Build-blog-with-Hexo-and-Github" class="headerlink" title="Build blog with Hexo and Github"></a>Build blog with <a target="_blank" rel="noopener" href="https://www.hexo.io/">Hexo</a> and <a target="_blank" rel="noopener" href="https://www.github.com/">Github</a></h3><blockquote>
+<p><em>In this article, I’m going to talk about how to build your own Blog with hexo and github</em></p>
+</blockquote>
+<p><strong>Platform:</strong> Linux</p>
+<p><strong>What’s you need:</strong> </p>
+<blockquote>
+<ol>
+<li>A github account</li>
+<li>npm installed </li>
+<li>nodejs installed</li>
+<li>know about some git commands</li>
+</ol>
+</blockquote>
+<span id="more"></span>
+
+<h4 id="Step-one"><a href="#Step-one" class="headerlink" title="Step one"></a>Step one</h4><p>Build a repos on Github named by “username.github.io”</p>
+<h4 id="Step-two"><a href="#Step-two" class="headerlink" title="Step two"></a>Step two</h4><p>Install hexo on your local pc</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>Execute the following commands on your local pc</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;Fold_Name&gt;</span><br><span class="line">$ cd &lt;Fold_Name&gt;</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<h4 id="Step-three"><a href="#Step-three" class="headerlink" title="Step three"></a>Step three</h4><p>Then push the local repository to remote repository on Github with the commands </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin $repos_address</span><br><span class="line">git push --set-upstream origin master</span><br></pre></td></tr></table></figure>
+
+<h5 id="Some-hexo-commands"><a href="#Some-hexo-commands" class="headerlink" title="Some hexo commands"></a>Some hexo commands</h5><p><em>1. Generate static file</em></p>
+<blockquote>
+<p>hexo g(enerate)</p>
+</blockquote>
+<p><em>2. Start the local server</em> </p>
+<blockquote>
+<p>hexo s(erver)</p>
+</blockquote>
+<p><em>3. Deploy your website</em></p>
+<blockquote>
+<p>hexo d(eploy)</p>
+</blockquote>
+<p><em>4. Create a new post</em></p>
+<blockquote>
+<p>hexo new “Post_Name”</p>
+</blockquote>
+</div></article></div></div></main><footer class="footer-container"><div class="paginator"><a href="/2020/04/19/ZSH-Control-key-bindings/" class="prev">PREV</a></div><div class="copyright"><p>© 2017 - 2023 <a href="https://dtover.github.io">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer></body></html>

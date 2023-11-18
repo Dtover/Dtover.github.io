@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Install MariaDB on Arch Linux · Hexo</title><meta name="description" content="Install MariaDB on Arch Linux - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="https://dtover.github.io/atom.xml" title="Hexo"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">Hexo</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>INDEX</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>ARCHIVES</p></a><ul class="shortcut-icons"><a href="https://github.com/dtover" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">Install MariaDB on Arch Linux</h1><div class="post-info">May 29, 2020</div><div class="post-content"><h3 id="Install-MariaDB-on-Arch-Linux"><a href="#Install-MariaDB-on-Arch-Linux" class="headerlink" title="Install MariaDB on Arch Linux"></a>Install MariaDB on Arch Linux</h3><h4 id="Section-I"><a href="#Section-I" class="headerlink" title="Section I:"></a>Section I:</h4><p><strong><em>Install and config MariaDB</em></strong> </p>
+<hr>
+<p><strong>1. Install MariaDB</strong> </p>
+<blockquote>
+<p>pacman -S mariadb  </p>
+</blockquote>
+<span id="more"></span>
+
+<p><strong>2. Configure MariaDB:</strong> </p>
+<blockquote>
+<p>mysql_install_db –user&#x3D;mysql –basedir&#x3D;&#x2F;usr –datadir&#x3D;&#x2F;var&#x2F;lib&#x2F;mysql  </p>
+</blockquote>
+<p><strong>3. Run MariaDB and make it run every boot</strong> </p>
+<blockquote>
+<p>systemctl enable –now mariadb  </p>
+</blockquote>
+<p><strong>4. Complete recommended security measures</strong> </p>
+<blockquote>
+<p>mysql_secure_installation  </p>
+</blockquote>
+<p><strong>5. Test Connection</strong> </p>
+<blockquote>
+<p>mysql -u root -p  </p>
+</blockquote>
+<h4 id="Section-II"><a href="#Section-II" class="headerlink" title="Section II:"></a>Section II:</h4><p><strong><em>Add a user to MariaDB</em></strong>  </p>
+<hr>
+<p><strong>1. Have Access to the MariaDB client shell:</strong> </p>
+<blockquote>
+<p>sudo mysql -u root<br>(<em>Add -p if your have a password</em>)</p>
+</blockquote>
+<p><strong>2. Create a new database</strong> </p>
+<blockquote>
+<p>CREATE DATABASE DB_NAME;  </p>
+</blockquote>
+<p><strong>3. Create new MariaDB User</strong> </p>
+<blockquote>
+<p>CREATE USER ‘new_user_name‘@localhost IDENTIFIED BY ‘new_password’;</p>
+</blockquote>
+<p><strong>4. Check the status of it</strong> </p>
+<blockquote>
+<p>SELECT User FROM mysql.user;  </p>
+</blockquote>
+<p><strong>5. To grant all privileges to new user</strong> </p>
+<blockquote>
+<p>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘new_user_name‘@localhost IDENTIFIED BY ‘new_password’;</p>
+</blockquote>
+<p><strong>6. To grant privileges only for DB_NAME</strong> </p>
+<blockquote>
+<p>GRANT ALL PRIVILEGES ON ‘DB_NAME’.* ‘new_user_name‘@localhost; </p>
+</blockquote>
+<p><strong>7. Check the result</strong> </p>
+<blockquote>
+<p>SHOW GRANTS FOR ‘new_user_name‘@localhost;</p>
+</blockquote>
+<p><strong>8. Remove the user account</strong> </p>
+<blockquote>
+<p>DROP USER ‘new_user_name‘@localhost;</p>
+</blockquote>
+</div></article></div></div></main><footer class="footer-container"><div class="paginator"><a href="/2020/07/17/How-to-write-Shell-script/" class="prev">PREV</a><a href="/2020/05/15/Install-Deb-package/" class="next">NEXT</a></div><div class="copyright"><p>© 2017 - 2023 <a href="https://dtover.github.io">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer></body></html>

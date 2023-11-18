@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Pacman Commands · Hexo</title><meta name="description" content="Pacman Commands - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="https://dtover.github.io/atom.xml" title="Hexo"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">Hexo</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>INDEX</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>ARCHIVES</p></a><ul class="shortcut-icons"><a href="https://github.com/dtover" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">Pacman Commands</h1><div class="post-info">Apr 28, 2020</div><div class="post-content"><h3 id="Pacman-Commands"><a href="#Pacman-Commands" class="headerlink" title="Pacman Commands"></a>Pacman Commands</h3><p><em>This file records some useful pacman commands</em><br><em>And take the package virtualbox as an example</em> </p>
+<p><strong>1.list all the package</strong> </p>
+<blockquote>
+<p>pacman -Q</p>
+</blockquote>
+<span id="more"></span>
+
+<p><strong>2.checkout wheather package is installed</strong> </p>
+<blockquote>
+<p>pacman -Q virtualbox </p>
+</blockquote>
+<p><strong>3.checkout the installed package details information</strong> </p>
+<blockquote>
+<p>pacman -Qi virtualbox</p>
+</blockquote>
+<p><strong>4.List all the files of installed package</strong> </p>
+<blockquote>
+<p>pacman -Ql virtualbox</p>
+</blockquote>
+<p><strong>5.find some file belong to which package</strong> </p>
+<blockquote>
+<p>pacman -Qo &#x2F;path&#x2F;filename</p>
+</blockquote>
+<p><strong>6.find the package groups</strong> </p>
+<blockquote>
+<p>pacman -Sg</p>
+</blockquote>
+<p><strong>7.find the package that the group contains</strong> </p>
+<blockquote>
+<p>pacman -Sg virtualbox</p>
+</blockquote>
+<p><strong>8.search the package related to the virtualbox</strong> </p>
+<blockquote>
+<p>pacman -Ss virtualbox</p>
+</blockquote>
+<p><strong>9.search the information of the package from the database</strong> </p>
+<blockquote>
+<p>pacman -Si virtualbox</p>
+</blockquote>
+<p><strong>10.update source</strong> </p>
+<blockquote>
+<p>pacman -Sy</p>
+</blockquote>
+<p><strong>11.update system</strong> </p>
+<blockquote>
+<p>pacman -Su</p>
+</blockquote>
+<p><strong>12.update the source and system</strong> </p>
+<blockquote>
+<p>pacman -Syu</p>
+</blockquote>
+<p><strong>13.update the source and then install the package</strong> </p>
+<blockquote>
+<p>pacman -Sy virtualbox</p>
+</blockquote>
+<p><strong>14.get the information of the package from database and then download and install</strong> </p>
+<blockquote>
+<p>pacman -S virtualbox</p>
+</blockquote>
+<p><strong>15.install the package</strong> </p>
+<blockquote>
+<p>pacman -Sf virtualbox</p>
+</blockquote>
+<p><strong>16.delete the package</strong> </p>
+<blockquote>
+<p>pacman -R virtualbox</p>
+</blockquote>
+<p><strong>17.clean the package in &#x2F;var&#x2F;cache&#x2F;pacman&#x2F;pkg</strong> </p>
+<blockquote>
+<p>pacman -Sc</p>
+</blockquote>
+<p><strong>18.clean all the package and the database</strong> </p>
+<blockquote>
+<p>pacman -Scc</p>
+</blockquote>
+<p><strong>19. install the package that was downloaded from the Internet</strong> </p>
+<ol>
+<li>cd to the path</li>
+<li>pacman -U virtualbox.pkg.tar.xz</li>
+</ol>
+</div></article></div></div></main><footer class="footer-container"><div class="paginator"><a href="/2020/04/28/Yum-Commands/" class="prev">PREV</a><a href="/2020/04/28/Git-Commands/" class="next">NEXT</a></div><div class="copyright"><p>© 2017 - 2023 <a href="https://dtover.github.io">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer></body></html>

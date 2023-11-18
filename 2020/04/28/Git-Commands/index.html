@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Git Commands · Hexo</title><meta name="description" content="Git Commands - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="https://dtover.github.io/atom.xml" title="Hexo"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">Hexo</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>INDEX</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>ARCHIVES</p></a><ul class="shortcut-icons"><a href="https://github.com/dtover" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">Git Commands</h1><div class="post-info">Apr 28, 2020</div><div class="post-content"><h3 id="Some-Git-commands"><a href="#Some-Git-commands" class="headerlink" title="Some Git commands"></a>Some Git commands</h3><p><em>In this article I’m going to list some git commands that are frequently used</em></p>
+<p><strong>1. List the method of git:</strong></p>
+<blockquote>
+<p>git</p>
+</blockquote>
+<p><strong>2. Set the current directory as a git repository:</strong></p>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<span id="more"></span>
+
+<p><strong>3. Take a look at current repository status:</strong></p>
+<blockquote>
+<p>git status</p>
+</blockquote>
+<p><strong>4_1. Add change of a single file</strong></p>
+<blockquote>
+<p>git add $Single_File_Name</p>
+</blockquote>
+<p><strong>4_2. Add all changed files</strong></p>
+<blockquote>
+<p>git add . </p>
+</blockquote>
+<p><strong>5. Take a look at the differences:</strong></p>
+<blockquote>
+<p>git diff</p>
+</blockquote>
+<p><strong>6. Reset to last version:</strong></p>
+<blockquote>
+<p>git reset</p>
+</blockquote>
+<p><strong>7_1. Tell Git who you are(name)</strong></p>
+<blockquote>
+<p>git config –global user.name “xxx”</p>
+</blockquote>
+<p><strong>7_2. Tell Git who you are(email)</strong><br>git config –global user.email “<a href="mailto:&#x78;&#120;&#120;&#x40;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;">&#x78;&#120;&#120;&#x40;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;</a>“</p>
+<p><strong>8. Commit changes to Git:(xx is comments)</strong></p>
+<blockquote>
+<p>git commit -m “xx” </p>
+</blockquote>
+<p><strong>9. Ignore some file</strong> </p>
+<blockquote>
+<p>touch .gitignore<br>add file name that need to be ignored to the .gitignore</p>
+</blockquote>
+<p><strong>10. Stop trace some file:</strong> </p>
+<blockquote>
+<p>git rm –cached $File_Name</p>
+</blockquote>
+<p><strong>11. Add branch:</strong> </p>
+<blockquote>
+<p>git branch $Branch_Name </p>
+</blockquote>
+<p><strong>12. Switch to the branch:</strong></p>
+<blockquote>
+<p>git checkout $Branch_Name</p>
+</blockquote>
+<p><strong>13. merge the branch:</strong> </p>
+<blockquote>
+<p>git merge $Branch_Name</p>
+</blockquote>
+<p><strong>14. List the local branches:</strong> </p>
+<blockquote>
+<p>git branch</p>
+</blockquote>
+<p><strong>15. Delete some branch:</strong> </p>
+<blockquote>
+<p>git branch -d(D:force delete) $Branch_Name</p>
+</blockquote>
+<p><strong>16. Add remote repository:</strong> </p>
+<blockquote>
+<p>git remote add origin $repos_address</p>
+</blockquote>
+<p><strong>17. Set local repos tracing remote one:</strong> </p>
+<blockquote>
+<p>git push –set-upstream</p>
+</blockquote>
+<p><strong>18. Clone the repos</strong> </p>
+<blockquote>
+<p>git clone xxx（xxx为远程地址）</p>
+</blockquote>
+<p><strong>19. Password free when push to remote repos:</strong> </p>
+<blockquote>
+<p>git config –global credential.helper store</p>
+</blockquote>
+<p><em>Besides, recommend a wonderful software named <a target="_blank" rel="noopener" href="https://github.com/jesseduffield/lazygit">lazygit</a></em> </p>
+</div></article></div></div></main><footer class="footer-container"><div class="paginator"><a href="/2020/04/28/Pacman-Commands/" class="prev">PREV</a><a href="/2020/04/19/ZSH-Control-key-bindings/" class="next">NEXT</a></div><div class="copyright"><p>© 2017 - 2023 <a href="https://dtover.github.io">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer></body></html>
