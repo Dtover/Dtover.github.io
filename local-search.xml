@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>创建一个meta depth api的使用实例</title>
+    <link href="/2023/11/18/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAmeta-depth-api%E7%9A%84%E4%BD%BF%E7%94%A8%E5%AE%9E%E4%BE%8B/"/>
+    <url>/2023/11/18/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAmeta-depth-api%E7%9A%84%E4%BD%BF%E7%94%A8%E5%AE%9E%E4%BE%8B/</url>
+    
+    <content type="html"><![CDATA[<h2 id="创建一个meta-depth-api的使用实例"><a href="#创建一个meta-depth-api的使用实例" class="headerlink" title="创建一个meta depth api的使用实例"></a>创建一个meta depth api的使用实例</h2><blockquote><p>本文将详细描述如何在unity中创建一个meta quest3的应用，并测试使用meta-depth-api</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>vr</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>how to build a vr game in unity</title>
+    <link href="/2022/11/12/how-to-build-a-vr-game-in-unity/"/>
+    <url>/2022/11/12/how-to-build-a-vr-game-in-unity/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java Spring</title>
+    <link href="/2020/09/04/Java-Spring/"/>
+    <url>/2020/09/04/Java-Spring/</url>
+    
+    <content type="html"><![CDATA[<p><strong>IOC:</strong> Inverse of Control 控制反转</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Conception</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java</tag>
+      
+      <tag>Spring</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Bind domain name to github page</title>
+    <link href="/2020/09/01/Bind-domain-name-to-github-page/"/>
+    <url>/2020/09/01/Bind-domain-name-to-github-page/</url>
+    
+    <content type="html"><![CDATA[<h4 id="How-to-bind-domain-name-to-github-page"><a href="#How-to-bind-domain-name-to-github-page" class="headerlink" title="How to bind domain name to github page"></a>How to bind domain name to github page</h4><p>When using github and hexo to deploy our own blog, we may want to customize our domain instead of using “name.github.io”, We can bind a domain name to it.</p><span id="more"></span><h5 id="1-Domain-name"><a href="#1-Domain-name" class="headerlink" title="1. Domain name"></a>1. Domain name</h5><p>Get a domain name, and resolve it to your “name.github.io”.</p><h5 id="2-Github"><a href="#2-Github" class="headerlink" title="2. Github"></a>2. Github</h5><p>Add a file named CNAME in blog_name&#x2F;source&#x2F;, then write your domain name into it(need not https or www).</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>tips</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>How to write Shell script</title>
+    <link href="/2020/07/17/How-to-write-Shell-script/"/>
+    <url>/2020/07/17/How-to-write-Shell-script/</url>
+    
+    <content type="html"><![CDATA[<h3 id="How-to-write-Shell-script"><a href="#How-to-write-Shell-script" class="headerlink" title="How to write Shell script"></a>How to write Shell script</h3><p><em>Here you can get to know the basic grammar of shell quickly</em></p><span id="more"></span><h4 id="I-Shell-variable"><a href="#I-Shell-variable" class="headerlink" title="I. Shell variable"></a>I. Shell variable</h4><h5 id="i-Valid-format-of-variable"><a href="#i-Valid-format-of-variable" class="headerlink" title="i. Valid format of variable"></a>i. Valid format of variable</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NAME</span><br><span class="line">LD_LIBTARY_PATH</span><br><span class="line">_var</span><br><span class="line">var2</span><br></pre></td></tr></table></figure><h5 id="ii-How-to-use-the-variable"><a href="#ii-How-to-use-the-variable" class="headerlink" title="ii. How to use the variable"></a>ii. How to use the variable</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var=&quot;this is a variable&quot;</span><br><span class="line">echo $var</span><br><span class="line">#Set the var read only</span><br><span class="line">readonly var</span><br><span class="line">echo $&#123;var&#125;</span><br><span class="line">#delete the var</span><br><span class="line">unset var</span><br></pre></td></tr></table></figure><p><em>It’s a good habit to have a pair of brace</em></p><h4 id="II-Shell-string"><a href="#II-Shell-string" class="headerlink" title="II. Shell string"></a>II. Shell string</h4><h5 id="i-joint-string"><a href="#i-joint-string" class="headerlink" title="i. joint string"></a>i. joint string</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var1=&quot;ruboob&quot;</span><br><span class="line">var2=&#x27;great&#x27;</span><br><span class="line">greeting=&quot;$&#123;var1&#125;,$&#123;var2&#125;&quot;</span><br></pre></td></tr></table></figure><h5 id="ii-Operation-string"><a href="#ii-Operation-string" class="headerlink" title="ii. Operation string"></a>ii. Operation string</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">string=&quot;abcdefg&quot;</span><br><span class="line">#get the length of the string</span><br><span class="line">echo $&#123;#string&#125;</span><br><span class="line">#get the four chars of string start from index 1, Attention:  index start from 0</span><br><span class="line">echo $&#123;string:1:4&#125; #get &quot;unoo&quot;</span><br><span class="line">var=&quot;This is a string&quot;</span><br><span class="line">echo $&#123;string#*s&#125;    #s is a string</span><br><span class="line">echo $&#123;string##*s&#125;   #tring</span><br><span class="line">echo $&#123;string%s*&#125;    #This is a </span><br><span class="line">echo $&#123;string%%s*&#125;   #Thi</span><br></pre></td></tr></table></figure><p><strong>Search the string</strong> </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string=&quot;abcdefghijkl&quot;</span><br><span class="line">#print the first index of char &#x27;i&#x27;</span><br><span class="line">echo `expr index &quot;$&#123;string&#125; i&quot;`</span><br></pre></td></tr></table></figure><h4 id="III-Shell-array"><a href="#III-Shell-array" class="headerlink" title="III. Shell array"></a>III. Shell array</h4><h5 id="i-Declare-an-array"><a href="#i-Declare-an-array" class="headerlink" title="i. Declare an array"></a>i. Declare an array</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#Attention : no comma inside</span><br><span class="line">array_name1=(value0 value1 value2 value3)</span><br><span class="line">#or</span><br><span class="line">array_name2[0]=value0</span><br><span class="line">array_name2[1]=value1</span><br><span class="line">array_name2[2]=value2</span><br></pre></td></tr></table></figure><h5 id="ii-Operation-array"><a href="#ii-Operation-array" class="headerlink" title="ii. Operation array"></a>ii. Operation array</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">array_value=$&#123;array_name1[n]&#125;</span><br><span class="line">#get all elements of the array</span><br><span class="line">echo $&#123;array_name1[@]&#125;</span><br><span class="line">#get the length of the array</span><br><span class="line">length=$&#123;#array_name[@]&#125;</span><br><span class="line">length=$&#123;#array_name[*]&#125;</span><br><span class="line">#get the length of the first element of array</span><br><span class="line">length=$&#123;#array_name[0]&#125;</span><br></pre></td></tr></table></figure><h4 id="IV-Shell-Comment"><a href="#IV-Shell-Comment" class="headerlink" title="IV. Shell Comment"></a>IV. Shell Comment</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># This is a comment line</span><br><span class="line"></span><br><span class="line">:&lt;&lt;EOF</span><br><span class="line">This is a </span><br><span class="line">triple-line</span><br><span class="line">comment</span><br><span class="line">EOF</span><br><span class="line"># &#x27;EOF&#x27; here can be replaced by any other symbol (like &#x27;, !)</span><br></pre></td></tr></table></figure><h4 id="V-Shell-parameter"><a href="#V-Shell-parameter" class="headerlink" title="V. Shell parameter"></a>V. Shell parameter</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ bash ./shell.sh 1 2 3</span><br><span class="line">$0 : the file name of shell</span><br><span class="line">$1 : 1</span><br><span class="line">$2 : 2</span><br><span class="line">$3 : 3</span><br><span class="line">$# : 3 # the number the parameter</span><br><span class="line">$* : show all the parameters as a string</span><br><span class="line">$@ : some as $*</span><br><span class="line">$? : show the status of the last command</span><br></pre></td></tr></table></figure><h4 id="VI-Shell-Operator"><a href="#VI-Shell-Operator" class="headerlink" title="VI. Shell Operator"></a>VI. Shell Operator</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var=`expr 2 + 2`</span><br><span class="line">var=$(expr 2 + 2)</span><br><span class="line">var=`expr 2 \* 3`</span><br><span class="line">a=10</span><br><span class="line">b=20</span><br><span class="line">if [ $a != $b -a $b -gt $(expr $a - $b) ];then</span><br><span class="line"> echo &quot;hi&quot;</span><br><span class="line">fi</span><br><span class="line">string=&quot;&quot;</span><br><span class="line">if [ -n &quot;$string&quot; ]</span><br><span class="line">echo &quot;The length of the string is 0&quot;</span><br><span class="line">fi</span><br><span class="line">[[ &amp;&amp; || &gt; &lt; ]]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>shell</tag>
+      
+      <tag>linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Install MariaDB on Arch Linux</title>
+    <link href="/2020/05/29/Install-MariaDB-on-Arch-Linux/"/>
+    <url>/2020/05/29/Install-MariaDB-on-Arch-Linux/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Install-MariaDB-on-Arch-Linux"><a href="#Install-MariaDB-on-Arch-Linux" class="headerlink" title="Install MariaDB on Arch Linux"></a>Install MariaDB on Arch Linux</h3><h4 id="Section-I"><a href="#Section-I" class="headerlink" title="Section I:"></a>Section I:</h4><p><strong><em>Install and config MariaDB</em></strong> </p><hr><p><strong>1. Install MariaDB</strong> </p><blockquote><p>pacman -S mariadb  </p></blockquote><span id="more"></span><p><strong>2. Configure MariaDB:</strong> </p><blockquote><p>mysql_install_db –user&#x3D;mysql –basedir&#x3D;&#x2F;usr –datadir&#x3D;&#x2F;var&#x2F;lib&#x2F;mysql  </p></blockquote><p><strong>3. Run MariaDB and make it run every boot</strong> </p><blockquote><p>systemctl enable –now mariadb  </p></blockquote><p><strong>4. Complete recommended security measures</strong> </p><blockquote><p>mysql_secure_installation  </p></blockquote><p><strong>5. Test Connection</strong> </p><blockquote><p>mysql -u root -p  </p></blockquote><h4 id="Section-II"><a href="#Section-II" class="headerlink" title="Section II:"></a>Section II:</h4><p><strong><em>Add a user to MariaDB</em></strong>  </p><hr><p><strong>1. Have Access to the MariaDB client shell:</strong> </p><blockquote><p>sudo mysql -u root<br>(<em>Add -p if your have a password</em>)</p></blockquote><p><strong>2. Create a new database</strong> </p><blockquote><p>CREATE DATABASE DB_NAME;  </p></blockquote><p><strong>3. Create new MariaDB User</strong> </p><blockquote><p>CREATE USER ‘new_user_name‘@localhost IDENTIFIED BY ‘new_password’;</p></blockquote><p><strong>4. Check the status of it</strong> </p><blockquote><p>SELECT User FROM mysql.user;  </p></blockquote><p><strong>5. To grant all privileges to new user</strong> </p><blockquote><p>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘new_user_name‘@localhost IDENTIFIED BY ‘new_password’;</p></blockquote><p><strong>6. To grant privileges only for DB_NAME</strong> </p><blockquote><p>GRANT ALL PRIVILEGES ON ‘DB_NAME’.* ‘new_user_name‘@localhost; </p></blockquote><p><strong>7. Check the result</strong> </p><blockquote><p>SHOW GRANTS FOR ‘new_user_name‘@localhost;</p></blockquote><p><strong>8. Remove the user account</strong> </p><blockquote><p>DROP USER ‘new_user_name‘@localhost;</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>MariaDB</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Install Deb package</title>
+    <link href="/2020/05/15/Install-Deb-package/"/>
+    <url>/2020/05/15/Install-Deb-package/</url>
+    
+    <content type="html"><![CDATA[<h4 id="This-file-records-the-steps-to-install-deb-package-in-arch-linux"><a href="#This-file-records-the-steps-to-install-deb-package-in-arch-linux" class="headerlink" title="This file records the steps to install deb package in arch linux"></a>This file records the steps to install deb package in arch linux</h4><p><strong>1. Download Deb package</strong><br><strong>2. Extract with the following commands</strong></p><blockquote><p>ar x package.deb<br>xz -dk package.tar.zx<br>(<em>-d: Extract</em>)<br>(<em>-k: Keep file after extracting</em>)<br>pacman -U package.tar</p></blockquote><span id="more"></span>]]></content>
+    
+    
+    <categories>
+      
+      <category>tips</category>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Yum Commands</title>
+    <link href="/2020/04/28/Yum-Commands/"/>
+    <url>/2020/04/28/Yum-Commands/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Yum-Commands"><a href="#Yum-Commands" class="headerlink" title="Yum Commands"></a>Yum Commands</h3><p><em>This file records some useful yum commands</em></p><p><strong>1. List all the package that can update:</strong>  </p><blockquote><p>yum check-update</p></blockquote><p><strong>2. Update all the software:</strong></p><blockquote><p>yum update</p></blockquote><span id="more"></span><p><strong>3. Install the package:</strong></p><blockquote><p>yum install <package_name></p></blockquote><p><strong>4. Update the software:</strong></p><blockquote><p>yum update <package_name></p></blockquote><p><strong>5. List all the package that can be installed:</strong></p><blockquote><p>yum list</p></blockquote><p><strong>6. Delete the package:</strong></p><blockquote><p>yum remove <package_name></p></blockquote><p><strong>7. Find the package:</strong></p><blockquote><p>yum search <keyword></p></blockquote><p><strong>8. Clear storage:</strong></p><blockquote><p>yum clean packages<br>yum clean headers<br>yum clean oldheaders<br>yum clean yum clean all</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Commands</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>yum</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Pacman Commands</title>
+    <link href="/2020/04/28/Pacman-Commands/"/>
+    <url>/2020/04/28/Pacman-Commands/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Pacman-Commands"><a href="#Pacman-Commands" class="headerlink" title="Pacman Commands"></a>Pacman Commands</h3><p><em>This file records some useful pacman commands</em><br><em>And take the package virtualbox as an example</em> </p><p><strong>1.list all the package</strong> </p><blockquote><p>pacman -Q</p></blockquote><span id="more"></span><p><strong>2.checkout wheather package is installed</strong> </p><blockquote><p>pacman -Q virtualbox </p></blockquote><p><strong>3.checkout the installed package details information</strong> </p><blockquote><p>pacman -Qi virtualbox</p></blockquote><p><strong>4.List all the files of installed package</strong> </p><blockquote><p>pacman -Ql virtualbox</p></blockquote><p><strong>5.find some file belong to which package</strong> </p><blockquote><p>pacman -Qo &#x2F;path&#x2F;filename</p></blockquote><p><strong>6.find the package groups</strong> </p><blockquote><p>pacman -Sg</p></blockquote><p><strong>7.find the package that the group contains</strong> </p><blockquote><p>pacman -Sg virtualbox</p></blockquote><p><strong>8.search the package related to the virtualbox</strong> </p><blockquote><p>pacman -Ss virtualbox</p></blockquote><p><strong>9.search the information of the package from the database</strong> </p><blockquote><p>pacman -Si virtualbox</p></blockquote><p><strong>10.update source</strong> </p><blockquote><p>pacman -Sy</p></blockquote><p><strong>11.update system</strong> </p><blockquote><p>pacman -Su</p></blockquote><p><strong>12.update the source and system</strong> </p><blockquote><p>pacman -Syu</p></blockquote><p><strong>13.update the source and then install the package</strong> </p><blockquote><p>pacman -Sy virtualbox</p></blockquote><p><strong>14.get the information of the package from database and then download and install</strong> </p><blockquote><p>pacman -S virtualbox</p></blockquote><p><strong>15.install the package</strong> </p><blockquote><p>pacman -Sf virtualbox</p></blockquote><p><strong>16.delete the package</strong> </p><blockquote><p>pacman -R virtualbox</p></blockquote><p><strong>17.clean the package in &#x2F;var&#x2F;cache&#x2F;pacman&#x2F;pkg</strong> </p><blockquote><p>pacman -Sc</p></blockquote><p><strong>18.clean all the package and the database</strong> </p><blockquote><p>pacman -Scc</p></blockquote><p><strong>19. install the package that was downloaded from the Internet</strong> </p><ol><li>cd to the path</li><li>pacman -U virtualbox.pkg.tar.xz</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Commands</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>pacman</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Git Commands</title>
+    <link href="/2020/04/28/Git-Commands/"/>
+    <url>/2020/04/28/Git-Commands/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Some-Git-commands"><a href="#Some-Git-commands" class="headerlink" title="Some Git commands"></a>Some Git commands</h3><p><em>In this article I’m going to list some git commands that are frequently used</em></p><p><strong>1. List the method of git:</strong></p><blockquote><p>git</p></blockquote><p><strong>2. Set the current directory as a git repository:</strong></p><blockquote><p>git init</p></blockquote><span id="more"></span><p><strong>3. Take a look at current repository status:</strong></p><blockquote><p>git status</p></blockquote><p><strong>4_1. Add change of a single file</strong></p><blockquote><p>git add $Single_File_Name</p></blockquote><p><strong>4_2. Add all changed files</strong></p><blockquote><p>git add . </p></blockquote><p><strong>5. Take a look at the differences:</strong></p><blockquote><p>git diff</p></blockquote><p><strong>6. Reset to last version:</strong></p><blockquote><p>git reset</p></blockquote><p><strong>7_1. Tell Git who you are(name)</strong></p><blockquote><p>git config –global user.name “xxx”</p></blockquote><p><strong>7_2. Tell Git who you are(email)</strong><br>git config –global user.email “<a href="mailto:&#x78;&#120;&#120;&#x40;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;">&#x78;&#120;&#120;&#x40;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;</a>“</p><p><strong>8. Commit changes to Git:(xx is comments)</strong></p><blockquote><p>git commit -m “xx” </p></blockquote><p><strong>9. Ignore some file</strong> </p><blockquote><p>touch .gitignore<br>add file name that need to be ignored to the .gitignore</p></blockquote><p><strong>10. Stop trace some file:</strong> </p><blockquote><p>git rm –cached $File_Name</p></blockquote><p><strong>11. Add branch:</strong> </p><blockquote><p>git branch $Branch_Name </p></blockquote><p><strong>12. Switch to the branch:</strong></p><blockquote><p>git checkout $Branch_Name</p></blockquote><p><strong>13. merge the branch:</strong> </p><blockquote><p>git merge $Branch_Name</p></blockquote><p><strong>14. List the local branches:</strong> </p><blockquote><p>git branch</p></blockquote><p><strong>15. Delete some branch:</strong> </p><blockquote><p>git branch -d(D:force delete) $Branch_Name</p></blockquote><p><strong>16. Add remote repository:</strong> </p><blockquote><p>git remote add origin $repos_address</p></blockquote><p><strong>17. Set local repos tracing remote one:</strong> </p><blockquote><p>git push –set-upstream</p></blockquote><p><strong>18. Clone the repos</strong> </p><blockquote><p>git clone xxx（xxx为远程地址）</p></blockquote><p><strong>19. Password free when push to remote repos:</strong> </p><blockquote><p>git config –global credential.helper store</p></blockquote><p><em>Besides, recommend a wonderful software named <a href="https://github.com/jesseduffield/lazygit">lazygit</a></em> </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Commands</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ZSH Control key bindings</title>
+    <link href="/2020/04/19/ZSH-Control-key-bindings/"/>
+    <url>/2020/04/19/ZSH-Control-key-bindings/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Useful-ZSH-Key-Bindings"><a href="#Useful-ZSH-Key-Bindings" class="headerlink" title="Useful ZSH Key Bindings"></a>Useful ZSH Key Bindings</h3><p><em>In order to use these key bindings more comfortably, it is a good choice to switch the L_Control and L_ALT</em></p><blockquote><ol><li>Ctrl + u : clear the current line</li></ol></blockquote><blockquote><ol start="2"><li>Ctrl + a : move to the start of the line</li></ol></blockquote><blockquote><ol start="3"><li>Ctrl + e : move to the end of the line or complete the command according to the history</li></ol></blockquote><span id="more"></span><blockquote><ol start="4"><li>Ctrl + f : move to the next char or complete the command according to the history</li></ol></blockquote><blockquote><ol start="5"><li>Ctrl + b : move to the previous char</li></ol></blockquote><blockquote><ol start="6"><li>Ctrl + p : fill with previous command in history</li></ol></blockquote><blockquote><ol start="7"><li>Ctrl + n : fill with next command in history</li></ol></blockquote><blockquote><ol start="8"><li>Ctrl + r : search the history command</li></ol></blockquote><blockquote><ol start="9"><li>Ctrl + y : paste the command</li></ol></blockquote><blockquote><ol start="10"><li>Ctrl + h : delete the char before the cursor</li></ol></blockquote><blockquote><ol start="11"><li>Ctrl + d : If the cursor is on a char, it will delete this char. If not, it will list the possible options that you may input</li></ol></blockquote><blockquote><ol start="12"><li>Ctrl + w : delete the word before the cursor</li></ol></blockquote><blockquote><ol start="13"><li>Ctrl + k : delete from the cursor to end of the line</li></ol></blockquote><blockquote><ol start="14"><li>Ctrl + t : swap the two char before the cursor</li></ol></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>tips</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>shell</tag>
+      
+      <tag>linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo X Github</title>
+    <link href="/2020/04/19/Hexo-X-Github/"/>
+    <url>/2020/04/19/Hexo-X-Github/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Build-blog-with-Hexo-and-Github"><a href="#Build-blog-with-Hexo-and-Github" class="headerlink" title="Build blog with Hexo and Github"></a>Build blog with <a href="https://www.hexo.io/">Hexo</a> and <a href="https://www.github.com/">Github</a></h3><blockquote><p><em>In this article, I’m going to talk about how to build your own Blog with hexo and github</em></p></blockquote><p><strong>Platform:</strong> Linux</p><p><strong>What’s you need:</strong> </p><blockquote><ol><li>A github account</li><li>npm installed </li><li>nodejs installed</li><li>know about some git commands</li></ol></blockquote><span id="more"></span><h4 id="Step-one"><a href="#Step-one" class="headerlink" title="Step one"></a>Step one</h4><p>Build a repos on Github named by “username.github.io”</p><h4 id="Step-two"><a href="#Step-two" class="headerlink" title="Step two"></a>Step two</h4><p>Install hexo on your local pc</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli</span><br></pre></td></tr></table></figure><p>Execute the following commands on your local pc</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;Fold_Name&gt;</span><br><span class="line">$ cd &lt;Fold_Name&gt;</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure><h4 id="Step-three"><a href="#Step-three" class="headerlink" title="Step three"></a>Step three</h4><p>Then push the local repository to remote repository on Github with the commands </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin $repos_address</span><br><span class="line">git push --set-upstream origin master</span><br></pre></td></tr></table></figure><h5 id="Some-hexo-commands"><a href="#Some-hexo-commands" class="headerlink" title="Some hexo commands"></a>Some hexo commands</h5><p><em>1. Generate static file</em></p><blockquote><p>hexo g(enerate)</p></blockquote><p><em>2. Start the local server</em> </p><blockquote><p>hexo s(erver)</p></blockquote><p><em>3. Deploy your website</em></p><blockquote><p>hexo d(eploy)</p></blockquote><p><em>4. Create a new post</em></p><blockquote><p>hexo new “Post_Name”</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>github</tag>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
