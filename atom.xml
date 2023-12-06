@@ -6,7 +6,7 @@
   <link href="https://dtover.github.io/atom.xml" rel="self"/>
   
   <link href="https://dtover.github.io/"/>
-  <updated>2023-12-04T13:18:26.465Z</updated>
+  <updated>2023-12-06T12:47:19.582Z</updated>
   <id>https://dtover.github.io/</id>
   
   <author>
@@ -17,11 +17,60 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Disable Boundary System when Creating a Meta Quest Game</title>
+    <link href="https://dtover.github.io/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/"/>
+    <id>https://dtover.github.io/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/</id>
+    <published>2023-12-06T12:35:13.000Z</published>
+    <updated>2023-12-06T12:47:19.582Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Disable-Boundary-System-when-Creating-a-Meta-Quest-Game-with-Unity"><a href="#Disable-Boundary-System-when-Creating-a-Meta-Quest-Game-with-Unity" class="headerlink" title="Disable Boundary System when Creating a Meta Quest Game with Unity"></a>Disable Boundary System when Creating a Meta Quest Game with Unity</h2><h3 id="just-following-the-these"><a href="#just-following-the-these" class="headerlink" title="just following the these:"></a>just following the these:</h3><ol><li>open the player setting window;<br><img src="/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/image_2023-12-06-20-43-55.png" alt="image_2023-12-06-20-43-55"></li><li>find the Custom Main Mainifest option in publishing settings<br><img src="/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/image_2023-12-06-20-45-50.png" alt="image_2023-12-06-20-45-50"></li><li>open the AndroidManifest.xml file and add the following code<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">uses-feature</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;com.oculus.feature.CONTEXTUAL_BOUNDARYLESS_APP&quot;</span> <span class="hljs-attr">android:required</span>=<span class="hljs-string">&quot;true&quot;</span> /&gt;</span><br></code></pre></td></tr></table></figure></li><li>and done.</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Disable-Boundary-System-when-Creating-a-Meta-Quest-Game-with-Unity&quot;&gt;&lt;a href=&quot;#Disable-Boundary-System-when-Creating-a-Meta-Quest-Gam</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vim X Hexo</title>
+    <link href="https://dtover.github.io/2023/12/05/Vim-X%E2%80%94Hexo/"/>
+    <id>https://dtover.github.io/2023/12/05/Vim-X%E2%80%94Hexo/</id>
+    <published>2023-12-05T13:18:51.000Z</published>
+    <updated>2023-12-06T12:47:59.564Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Vim-X-Hexo"><a href="#Vim-X-Hexo" class="headerlink" title="Vim X Hexo"></a>Vim X Hexo</h2><blockquote><p>in this article, I’m going to talk about how to write markdown in vim, especially how to deal with image insert problem.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Vim-X-Hexo&quot;&gt;&lt;a href=&quot;#Vim-X-Hexo&quot; class=&quot;headerlink&quot; title=&quot;Vim X Hexo&quot;&gt;&lt;/a&gt;Vim X Hexo&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;in this article, I’m goin</summary>
+      
+    
+    
+    
+    <category term="tutorial" scheme="https://dtover.github.io/categories/tutorial/"/>
+    
+    
+    <category term="github" scheme="https://dtover.github.io/tags/github/"/>
+    
+    <category term="hexo" scheme="https://dtover.github.io/tags/hexo/"/>
+    
+    <category term="vim" scheme="https://dtover.github.io/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java面试题</title>
     <link href="https://dtover.github.io/2023/12/04/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     <id>https://dtover.github.io/2023/12/04/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2023-12-04T12:59:35.000Z</published>
-    <updated>2023-12-04T13:18:26.465Z</updated>
+    <updated>2023-12-05T13:15:00.808Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-为什么使用Spring框架"><a href="#1-为什么使用Spring框架" class="headerlink" title="1.为什么使用Spring框架"></a>1.为什么使用Spring框架</h3><blockquote><p>2004年发布1.0版本，Spring 全家桶：Spring Framework,Spring Boot,Spring Data,Spring Cloud,Spring Security</p></blockquote><ol><li><strong>轻量</strong>，Spring Framework 是一个轻量级的企业应用框架，它的核心包仅有1~2M大小。</li><li><strong>支持IOC，方便解耦，简化开发</strong>，通过Spring提供的IOC容器，我们可以将对象及对象之间的依赖关系交给Spring进行统一管理，避免硬编码造成的程序耦合。</li><li><strong>支持AOP面向切面编程</strong>，通过Spring的AOP，我们可以将一些通用人物如安全，事务，日志等进行统一式管理，从而使业务代码得到更好的复用和管理。</li><li><strong>支持MVC</strong>，Spring MVC提供了功能更加强大且灵活的Web应用支持。</li><li><strong>申明式事务管理</strong>，通过声明式的方式可以灵活的进行事务的管理，从而提高开发效率。</li><li><strong>生态</strong>，Spring生态非常庞大，社区的活跃度和技术的成熟度都非常高。</li></ol>]]></content>
     
@@ -329,7 +378,7 @@
     <link href="https://dtover.github.io/2020/04/19/Hexo-X-Github/"/>
     <id>https://dtover.github.io/2020/04/19/Hexo-X-Github/</id>
     <published>2020-04-19T06:47:52.000Z</published>
-    <updated>2023-12-05T13:14:29.812Z</updated>
+    <updated>2023-12-05T13:16:01.325Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Build-blog-with-Hexo-and-Github"><a href="#Build-blog-with-Hexo-and-Github" class="headerlink" title="Build blog with Hexo and Github"></a>Build blog with <a href="https://www.hexo.io/">Hexo</a> and <a href="https://www.github.com/">Github</a></h3><blockquote><p><em>In this article, I’m going to talk about how to build your own Blog with hexo and github</em></p></blockquote><hr><p><strong>Platform:</strong> Linux | windows | mac</p><span id="more"></span><p><img src="/2020/04/19/Hexo-X-Github/hexo.png" alt="HexoSitePage"></p><p><strong>What’s you need:</strong> </p><ol><li>A github account</li><li>nodejs installed</li><li>git installed</li></ol><h4 id="Step-one"><a href="#Step-one" class="headerlink" title="Step one"></a>Step one</h4><p>Build a repos on Github named by “username.github.io”</p><h4 id="Step-two"><a href="#Step-two" class="headerlink" title="Step two"></a>Step two</h4><p>Install hexo on your local pc</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npm install hexo-cli<br></code></pre></td></tr></table></figure><p>Execute the following commands on your local pc</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo init &lt;Fold_Name&gt;<br>$ <span class="hljs-built_in">cd</span> &lt;Fold_Name&gt;<br>$ npm install hexo-deployer-git --save<br>$ git init<br></code></pre></td></tr></table></figure><h4 id="Step-three"><a href="#Step-three" class="headerlink" title="Step three"></a>Step three</h4><p>Then push the local repository to remote repository on Github with the commands </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ git remote add origin <span class="hljs-variable">$repos_address</span><br>$ git push --set-upstream origin master<br></code></pre></td></tr></table></figure><h5 id="Some-hexo-commands"><a href="#Some-hexo-commands" class="headerlink" title="Some hexo commands"></a>Some hexo commands</h5><p><em>1. Generate static file</em></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo g(enerate)<br></code></pre></td></tr></table></figure><p><em>2. Start the local server</em> </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo s(erver)<br></code></pre></td></tr></table></figure><p><em>3. Deploy your website</em></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo d(eploy)<br></code></pre></td></tr></table></figure><p><em>4. Create a new post</em></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo new [post|page|draft] <span class="hljs-string">&quot;Post_Name&quot;</span><br></code></pre></td></tr></table></figure>]]></content>
     

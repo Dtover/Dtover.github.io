@@ -4,6 +4,48 @@
   
   
   <entry>
+    <title>Disable Boundary System when Creating a Meta Quest Game</title>
+    <link href="/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/"/>
+    <url>/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Disable-Boundary-System-when-Creating-a-Meta-Quest-Game-with-Unity"><a href="#Disable-Boundary-System-when-Creating-a-Meta-Quest-Game-with-Unity" class="headerlink" title="Disable Boundary System when Creating a Meta Quest Game with Unity"></a>Disable Boundary System when Creating a Meta Quest Game with Unity</h2><h3 id="just-following-the-these"><a href="#just-following-the-these" class="headerlink" title="just following the these:"></a>just following the these:</h3><ol><li>open the player setting window;<br><img src="/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/image_2023-12-06-20-43-55.png" alt="image_2023-12-06-20-43-55"></li><li>find the Custom Main Mainifest option in publishing settings<br><img src="/2023/12/06/Disable-Boundary-System-when-Creating-a-Meta-Quest-Game/image_2023-12-06-20-45-50.png" alt="image_2023-12-06-20-45-50"></li><li>open the AndroidManifest.xml file and add the following code<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">uses-feature</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;com.oculus.feature.CONTEXTUAL_BOUNDARYLESS_APP&quot;</span> <span class="hljs-attr">android:required</span>=<span class="hljs-string">&quot;true&quot;</span> /&gt;</span><br></code></pre></td></tr></table></figure></li><li>and done.</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Vim X Hexo</title>
+    <link href="/2023/12/05/Vim-X%E2%80%94Hexo/"/>
+    <url>/2023/12/05/Vim-X%E2%80%94Hexo/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Vim-X-Hexo"><a href="#Vim-X-Hexo" class="headerlink" title="Vim X Hexo"></a>Vim X Hexo</h2><blockquote><p>in this article, I’m going to talk about how to write markdown in vim, especially how to deal with image insert problem.</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>github</tag>
+      
+      <tag>hexo</tag>
+      
+      <tag>vim</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java面试题</title>
     <link href="/2023/12/04/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     <url>/2023/12/04/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
